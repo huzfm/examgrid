@@ -5,6 +5,9 @@ import { sendOtp, verifyOtp } from "./otp";
 dotenv.config();
 const app = express();
 app.use(express.json());
+app.get("/test", (req, res) => {
+  res.send("OTP Service is running");
+});
 
 app.post("/send-otp", async (req, res) => {
   const { email } = req.body;
