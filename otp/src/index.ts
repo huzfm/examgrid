@@ -24,7 +24,7 @@ app.post("/verify-otp", (req, res) => {
   res.json({ success: valid });
 });
 
-const PORT = 3000;
+const PORT = 8080;
 app.listen(PORT, () =>
   console.log(`Server running on http://localhost:${PORT}`)
 );
