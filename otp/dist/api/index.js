@@ -18,6 +18,9 @@ const otp_1 = require("./otp");
 dotenv_1.default.config();
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
+app.get("/", (req, res) => {
+    res.send("OTP Service is running");
+});
 app.post("/send-otp", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { email } = req.body;
     if (!email)
