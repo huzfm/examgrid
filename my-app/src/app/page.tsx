@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Home from "@/components/otp";
 
 function page() {
   return (
@@ -30,6 +31,7 @@ function page() {
             IkramZargar
           </a>
         </footer>
+        <Home />
       </div>
     </>
   );
